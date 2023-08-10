@@ -1,38 +1,95 @@
-*{
-    margin: 0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lora;
 }
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color:brown;
 }
-header{
-    background-color: skyblue;
-    text-align: center; 
-    padding-top: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+header {
+  background-color: skyblue;
+  text-align: center;
+  padding-top: 20px;
+  font-family:Lora;
+  width: 100%;
 }
-nav{
-    margin-top: 20px;
+nav {
+  margin-top: 20px;
 }
-nav ul{
-    height: 30px;
-    background-color: #444;
-    padding: 0;
-    margin: 0;
+nav ul {
+  height: 50px;
+  background-color: #444;
+  text-align: center;
+  list-style-type: none;
+  padding: 10px;
+}
+nav li {
+  display: inline;
+  margin-left: 28px;
+}
+nav ul a {
+  text-decoration: none;
+  font-size: 22px;
+  color: aquamarine;
+}
+nav ul a:hover {
+  background-color:orange;
+}
+
+main section figure{
+    overflow:hidden;
+    padding: 30px;
+    margin: 30px;
+    background-color: bisque;
+}
+
+
+figure, figcaption{
     text-align: center;
-    list-style-type: none;
-    padding:10px ;
-    
 }
-nav li{
-    display: inline;
-    margin-left: 20px;
-}
-nav ul a{
-    text-decoration: none;
+
+figcaption{
     font-size: 22px;
-   color: aquamarine;
 }
-nav ul a:hover{
-    background-color:;
+
+p{
+    margin-top: 5px;
+    font-size: 18px;
 }
+
+/* other article */
+
+#otherarticle section article{
+    margin: 50px 50px;
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+#otherarticle{
+    display: flex;
+    background-color:skyblue;
+}
+
+#otherarticle section h2{
+    text-align: center;
+}
+
+.article{
+    font-size: 16px;
+}
+
+/* footer */
+footer{
+    padding: 20px;
+    color: black;
+    background-color: crimson;
+    height: 68px;
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    main section img{
+        width: 100%;
+    }
+  }
